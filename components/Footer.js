@@ -19,7 +19,7 @@ const Footer = () => {
           ))}
         </nav>
         <p className="mt-8 text-center text-gray-400">
-          &copy; Honey Dripper Jewellery Co. All Rights Reserved.
+          &copy; Honey Dripper Jewelry Co. All Rights Reserved.
         </p>
       </div>
     </footer>
