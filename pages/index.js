@@ -8,7 +8,7 @@ export default function Home({ products }) {
   return (
     <div className="">
       <Head>
-        <title>JoBox Tool Co</title>
+        <title>Honey Dripper</title>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta httpEquiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
         <meta name="description" content="Modern eCommerce Store for purchasing tools and equipment, built using Next.js, Shopify, and TailwindCSS."/>
