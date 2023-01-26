@@ -15,18 +15,17 @@ function Nav() {
   });
 
   return (
-    <header className="border-b sticky top-0 z-20 bg-neutral-700 border-transparent">
-      <div className="flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto lg:max-w-screen-xl">
-        <Link href="/" passHref>
-          <a className="cursor-pointer">
-            <Image src="/JoBox Tool Co-logo.jpeg" alt="JoBox Tool Company Logo" height="50px" width="100%" />
+    <header className="sticky top-0 z-20 bg-white border-b">
+    <div className="flex items-center justify-between max-w-6xl px-4 pt-4 pb-2 mx-auto lg:max-w-screen-xl">
+      <Link href="/" passHref>
+        <a className="cursor-pointer">
+          <span className="pt-1 text-lg font-bold">
+              Shopify + Next.js 
+            </span>
           </a>
         </Link>
-        <a
-          className="text-md font-bold cursor-pointer text-orange-400"
-          onClick={() => {
-            setCartOpen(!cartOpen);
-          }}
+        <a className="font-bold cursor-pointer text-md"
+          onClick={() => setCartOpen(!cartOpen)}
         >
           Cart ({cartQuantity})
         </a>

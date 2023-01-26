@@ -4,7 +4,7 @@ import Nav from "./Nav";
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen bg-neutral-700">
+    <div className="flex flex-col min-h-screen">
       <Nav />
       <main>{children}</main>
       <Footer />

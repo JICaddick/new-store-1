@@ -81,9 +81,9 @@ function ProductForm({ product }) {
   }, [productInventory, selectedVariant])
 
   return (
-    <div className="rounded-2xl p-4 shadow-lg flex flex-col w-full md:w-1/3">
-      <h2 className="text-2xl font-bold text-orange-400">{product.title}</h2>
-      <span className="pb-3 pt-3 text-xl text-red-500">
+    <div className="flex flex-col w-full p-4 shadow-lg rounded-2xl md:w-1/3">
+      <h2 className="text-2xl font-bold">{product.title}</h2>
+      <span className="pd-3">
         {formatter.format(selectedVariant.variantPrice)}
       </span>
       {product.options.map(({ name, values }) => (
@@ -96,20 +96,18 @@ function ProductForm({ product }) {
         />
       ))}
       {available ?
-        <button
-          onClick={() => {
-            addToCart(selectedVariant);
-          }}
-          className="bg-orange-400 rounded-lg mt-3 text-white px-2 py-3 hover:bg-orange-400 hover:border-2 hover:border-neutral-300 hover:text-neutral-800 hover:font-bold"
-        >
-          Add To Cart
-        </button>
-        :
-        <button
-          className="rounded-lg mt-3 text-white px-2 py-3 bg-gray-800 cursor-not-allowed"
-        >
-          Sold Out!
-        </button>
+            <button
+            onClick={() => {
+                addToCart(selectedVariant)
+            }}
+      className="px-2 py-3 mt-3 text-white bg-black rounded-lg hover:bg-gray-800"
+  >
+Add to cart
+</button> : 
+<button
+className="px-2 py-3 mt-3 text-white bg-gray-800 rounded-lg cursor-not-allowed">
+Sold out!
+</button>
       }
     </div>
   );
