@@ -13,9 +13,9 @@ const ProductCard = ({ product }) => {
     <Link
       href={`/products/${handle}`}
         >
-          <a className="group">
-            <div className="w-full overflow-hidden bg-gray-200 rounded-3xl">
-              <div className="relative group-hover:opacity-75 h-72">
+          <a className="font-serif group hover:opacity-60 hover:text-green-900">
+            <div className="w-full overflow-hidden bg-gray-200 shadow-md shadow-yellow-500 rounded-2xl">
+              <div className="relative h-72">
                 <Image
                   src={originalSrc}
                   alt={altText}
@@ -24,8 +24,8 @@ const ProductCard = ({ product }) => {
                 />
               </div>
             </div> 
-          <h3 className="mt-4 text-lg font-medium text-gray-900 ">{title}</h3>
-        <p className="mt-1 text-sm text-gray-700">{formatter.format(price)} </p>
+          <h3 className="mt-4 font-medium text-green-700">{title}</h3>
+        <p className="mt-1 text-sm">{formatter.format(price)} </p>
       </a>
     </Link>
   )
