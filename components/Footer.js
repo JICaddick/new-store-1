@@ -8,17 +8,17 @@ const navigation = [
 const Footer = () => {
   return (
     <footer className="bg-white">
-        <div className="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
+        <div className="px-4 py-4 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
             <nav className="flex flex-wrap justify-center">
           {navigation.map((item, index) => (
-            <div className="px-6 py-2" key={index}>
-              <a href={item.href} className="text-gray-300 hover:text-orange-400">
+            <div className="px-6" key={index}>
+              <a href={item.href} className="text-yellow-600 hover:text-yellow-500">
                 {item.name}
               </a>
             </div>
           ))}
         </nav>
-        <p className="mt-8 text-center text-gray-400">
+        <p className="mt-8 text-center text-green-700">
           &copy; Honey Dripper Jewelry Co. All Rights Reserved.
         </p>
       </div>
