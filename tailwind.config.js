@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Lora': ['Lora', 'serif']
+      },
+    },
+  },
+  variants: {
+    // Some useful comment
   },
   plugins: [],
 }
