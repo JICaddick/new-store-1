@@ -42,7 +42,7 @@ function ProductPageContent({ product }) {
         </div>
         <ProductForm product={product} />
       </div>
-      <p className="w-11/12 max-w-3xl pt-16 mx-auto space-y-8 md:space-x-4 lg:space-x-8 text-neutral-300">
+      <p className="flex flex-col items-center justify-center pt-16 space-y-8 text-gray-500 lg:space-x-8 drop-shadow-2xl">
         {product.description}
       </p>
       <RecommendedList

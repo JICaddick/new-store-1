@@ -1,7 +1,7 @@
 const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
   return (
     <fieldset className="mt-3">
-      <legend className="text-xl font-semibold">{name}</legend>
+      <legend className="text-xl font-semibold text-yellow-400 drop-shadow-2xl">{name}</legend>
       <div className="inline-flex flex-wrap items-center">
         {values.map((value) => {
           const id = `option-${name}-${value}`;
@@ -21,10 +21,10 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                 }}
               />
               <div
-                className={`p-2 mt-3 text-lg rounded-full block cursor-pointer mr-3 ${
+                className={`p-2 mt-3 text-lg block cursor-pointer mr-3 shadow-md bg-green-700 rounded-2xl shadow-yellow-500 ${
                   checked
-                    ? "text-white bg-gray-900"
-                    : "text-grey-900 bg-grey-200"
+                    ? "text-yellow-400 bg-green-700"
+                    : "text-yellow-400 bg-green-700"
                 }`}
               >
                 <span className="px-2">{value}</span>
