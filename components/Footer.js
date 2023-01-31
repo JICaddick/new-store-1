@@ -7,8 +7,8 @@ const navigation = [
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
-        <div className="px-4 py-4 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
+    <footer className="bg-gray-100">
+        <div className="px-4 py-2 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
             <nav className="flex flex-wrap justify-center">
           {navigation.map((item, index) => (
             <div className="px-6" key={index}>
@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
           ))}
         </nav>
-        <p className="mt-8 text-center text-green-700">
+        <p className="mt-2 text-center text-green-700">
           &copy; Honey Dripper Jewelry Co. All Rights Reserved.
         </p>
       </div>
