@@ -82,7 +82,7 @@ function ProductForm({ product }) {
 
   return (
     <div className="flex flex-col w-full p-4 shadow-lg rounded-1xl md:w-1/3 ">
-      <h2 className="text-2xl font-bold text-yellow-400 drop-shadow-2xl">{product.title}</h2>
+      <h2 className="text-2xl font-bold text-yellow-400 bg-black rounded-full shadow-md drop-shadow-2xl">{product.title}</h2>
       <span className="text-gray-500 pd-3 drop-shadow-2xl">
         {formatter.format(selectedVariant.variantPrice)}
       </span>
