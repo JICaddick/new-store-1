@@ -15,6 +15,7 @@
     "axios": "^0.27.2",
     "next": "^12.2.5",
     "react": "18.2.0",
+    "react-cool-dimensions": "^3.0.0",
     "react-dom": "18.2.0",
     "sass": "^1.54.8",
     "swiper": "^8.3.2",
@@ -30,6 +31,7 @@
     "jest": "^29.0.3",
     "jest-environment-jsdom": "^29.0.3",
     "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "tailwindcss-text-fill-stroke": "^1.1.2"
   }
 }

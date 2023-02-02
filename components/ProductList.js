@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard"
 
 const ProductList = ({ products }) => {
     return (
-            <div className="max-w-2xl px-4 pb-16 mx-auto sm:py-8 sm:px-6 lg:max-w-7xl">
+            <div className="max-w-2xl px-4 pb-16 mx-auto sm:py-8 sm:px-6 lg:max-w-7xl ">
                 <h2 className="mb-6 text-3xl font-extrabold text-green-700">
                     Products
                 </h2>
