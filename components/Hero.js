@@ -27,7 +27,7 @@ const Hero = () => {
       />
       <div className="relative content-end">
         <h1 className="font-extrabold ">
-          <p className="object-cover py-4 mt-24 text-gray-700 text-7xl bg-clip-text bg-gradient-to-r sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10">
+          <p className="object-cover py-4 mt-24 text-gray-700 text-7xl bg-clip-text bg-gradient-to-r sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 text-fill-white text-stroke-2 text-stroke-black">
             Honey Dripper Jewelry
           </p>
         </h1>
