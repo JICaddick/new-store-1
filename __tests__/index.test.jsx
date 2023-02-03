@@ -1,15 +1,15 @@
 import { render, screen } from '@testing-library/react'
-import Home from '../pages/index'
+import Hero from './Hero'
 import '@testing-library/jest-dom'
 
-describe('Home', () => {
-    it('should render home page', () => {
-        render(<Home />)
+describe('Hero', () => {
+  it('should render hero component', () => {
+    render(<Hero />)
 
-        const heading = screen.getByRole('heading', {
-            name: /Honey Dripper Jewelry/i,
-        })
+    const heading = screen.getByText(/Honey Dripper Jewelry/i)
+    const subheading = screen.getByText(/Sweet Like Honey/i)
 
-        expect(heading).toBeInTheDocument()
-    })
+    expect(heading).toBeInTheDocument()
+    expect(subheading).toBeInTheDocument()
+  })
 })

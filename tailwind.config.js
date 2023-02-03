@@ -25,7 +25,7 @@ module.exports = {
           'green': '#15803d'},
        }),
       borderWidth: {
-        DEFAULT: '1px',
+        DEFAULT: '0px',
         '0': '0',
         '2': '2px',
         '3': '3px',

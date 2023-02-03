@@ -31,7 +31,7 @@ const Hero = () => {
             Honey Dripper Jewelry
           </p>
         </h1>
-        <h2 className="max-w-md mx-auto my-2 font-semibold pb-28 text-sky-200 drop-shadow-2xl shadow-green-700 sm:text-5xl md:mt-5 md:text-6xl text-fill-cyan-500 text-stroke-2 text-stroke-black">
+        <h2 className="max-w-md mx-auto my-2 font-semibold text-green-700 pb-28 drop-shadow-2xl shadow-green-700 sm:text-5xl md:mt-5 md:text-6xl text-fill-cyan-500 text-stroke-2 text-stroke-black">
         Sweet Like Honey
         </h2>
       </div>
