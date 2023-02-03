@@ -23,8 +23,8 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
               <div
                 className={`p-2 mt-3 text-lg block cursor-pointer mr-3 shadow-md bg-green-700 rounded-2xl shadow-yellow-500 ${
                   checked
-                    ? "text-yellow-400 bg-green-700"
-                    : "text-yellow-400 bg-green-700"
+                    ? "bg-yellow-400 text-white shadow-2xl"
+                    : "bg-yellow-400 text-white shadow-2xl"
                 }`}
               >
                 <span className="px-2">{value}</span>

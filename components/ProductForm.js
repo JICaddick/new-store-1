@@ -81,9 +81,9 @@ function ProductForm({ product }) {
   }, [productInventory, selectedVariant])
 
   return (
-    <div className="flex flex-col w-full p-4 shadow-lg rounded-1xl md:w-1/3 ">
-      <h2 className="text-2xl font-bold text-yellow-400 bg-black rounded-full shadow-md drop-shadow-2xl">{product.title}</h2>
-      <span className="text-gray-500 pd-3 drop-shadow-2xl">
+    <div className="flex flex-col w-full p-4 rounded-lg shadow-lg md:w-1/3 shadow-yellow-500 shadow-2 ">
+      <h2 className="pb-2 text-4xl font-bold rounded-full text-cyan-400 shadow-m text-fill-cyan-500 text-stroke-2 text-stroke-black">{product.title}</h2>
+      <span className="text-gray-500 pd-3">
         {formatter.format(selectedVariant.variantPrice)}
       </span>
       {product.options.map(({ name, values }) => (
@@ -100,7 +100,7 @@ function ProductForm({ product }) {
             onClick={() => {
                 addToCart(selectedVariant)
             }}
-      className="px-2 py-3 mt-3 text-yellow-400 bg-green-700 shadow-md rounded-2xl shadow-yellow-500"
+      className="px-2 py-3 mt-3 text-yellow-500 border-2 shadow-md border-cyan-500 rounded-2xl shadow-green-700"
   >
 Add to cart, you deserve it!
 </button> : 

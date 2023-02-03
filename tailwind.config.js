@@ -10,23 +10,19 @@ module.exports = {
         'Lora': ['Lora', 'serif']
       },
       colors: {
-        'primary': {
-          'yellow': '#ffc82c'},
-        'secondary': {
-          'green': '#00b140'},
-        'tertiary': {
-          'white': '#ffffff'},
-        'quaternary': {
-          'black': '#000000'},
-        'quinary': {
-          'gray': '#f5f5f5'},
-      },
+          'yellow': '#eab308',
+          'green': '#15803d',
+          'amber': '#fffbeb',
+          'cyan': '#67e8f9',
+          'gray': '#94a3b8'
+        }, 
       borderColor: theme => ({
         ...theme('colors'),
          DEFAULT: theme('colors.gray.300', 'currentColor'),
-        'primary': '#3490dc',
-        'secondary': '#ffed4a',
-        'danger': '#e3342f',
+          'primary': {
+          'yellow': '#eab308'},
+          'secondary': {
+          'green': '#15803d'},
        }),
       borderWidth: {
         DEFAULT: '1px',

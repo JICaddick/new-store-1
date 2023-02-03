@@ -27,11 +27,11 @@ const Hero = () => {
       />
       <div className="relative content-end">
         <h1 className="font-extrabold ">
-          <p className="object-cover py-4 mt-24 text-gray-700 text-7xl bg-clip-text bg-gradient-to-r sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 text-fill-white text-stroke-2 text-stroke-black">
+          <p className="object-cover py-4 mt-24 text-cyan-500 text-7xl bg-clip-text bg-gradient-to-r sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 text-fill-cyan-500 text-stroke-2 text-stroke-black">
             Honey Dripper Jewelry
           </p>
         </h1>
-        <h2 className="max-w-md pb-16 mx-auto my-4 mt-3 text-4xl font-semibold text-gray-700 sm:text-4xl md:mt-5 md:text-4xl">
+        <h2 className="max-w-md pb-16 mx-auto my-4 mt-3 text-4xl font-semibold text-cyan-500 sm:text-4xl md:mt-5 md:text-4xl">
         Sweet Like Honey
         </h2>
       </div>
