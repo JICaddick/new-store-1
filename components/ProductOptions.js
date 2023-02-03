@@ -1,8 +1,8 @@
 const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
   return (
     <fieldset className="mt-3">
-      <legend className="text-xl font-semibold text-yellow-400 drop-shadow-2xl">{name}</legend>
-      <div className="inline-flex flex-wrap items-center">
+      <legend className="text-xl font-semibold text-amber-700 drop-shadow-2xl ">{name}</legend>
+      <div className="inline-flex flex-wrap items-center hover:opacity-60">
         {values.map((value) => {
           const id = `option-${name}-${value}`;
           const checked = selectedOptions[name] === value;
@@ -21,7 +21,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                 }}
               />
               <div
-                className={`p-2 mt-3 text-lg block cursor-pointer mr-3 shadow-md bg-green-700 rounded-2xl shadow-yellow-500 ${
+                className={`p-2 mt-3 text-lg block cursor-pointer mr-3 bg-yellow-400 shadow-md text-amber-700 rounded-xl shadow-green-700 ${
                   checked
                     ? "bg-yellow-400 text-white shadow-2xl"
                     : "bg-yellow-400 text-white shadow-2xl"
