@@ -1,6 +1,5 @@
 import { getProductsInCollection } from "../lib/shopify";
 import ProductList from "../components/ProductList";
-import styles from "../styles/Home.module.css";
 import Hero from "../components/Hero";
 import Head from "next/head";
 
@@ -11,6 +10,7 @@ export default function Home({ products }) {
         <title>Honey Dripper Jewelry</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"></link>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta httpEquiv="Content-Type" content="text/html; charset=ISO-8859-1"/>

@@ -7,38 +7,25 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Lora': ['Lora', 'serif']
+        'Raleway': ['Raleway', 'sans-serif'], // <--   this is the primary font.  
+        'Lora': ['Lora', 'serif'], // <--  this is the secondary font.  
       },
       colors: {
-          'yellow': '#eab308',
-          'green': '#15803d',
-          'amber': '#fffbeb',
-          'cyan': '#67e8f9',
-          'gray': '#94a3b8'
+          'amber': '#fffbeb', // <-- this is the primary (background color)
+          'green': '#15803d', // <-- this is the secondary (text color)
+          'yellow': '#eab308', // <-- this is the tertiary (accent color) 
+          'orange' : '#f59e0b', // <-- this is the quaternary (text color)
+          'darkorange' : '#ca8a04', // <-- this is the quinary (text color)
         }, 
-      borderColor: theme => ({
+      
+      borderColor: theme => ({ // defaults to these values - Needed for textStrokeColor. No need to specify all of them.
         ...theme('colors'),
          DEFAULT: theme('colors.gray.300', 'currentColor'),
-          'primary': {
-          'yellow': '#eab308'},
-          'secondary': {
-          'green': '#15803d'},
        }),
-      borderWidth: {
-        DEFAULT: '0px',
-        '0': '0',
-        '2': '2px',
-        '3': '3px',
-        '4': '4px',
-        '6': '6px',
-        '8': '8px',
-      }
     },
   },
-  variants: {
-    // Some useful comment
-  },
-  theme: { // defaults to these values
+
+  theme: {
     textFillColor: theme => theme('borderColor'),
     textStrokeColor: theme => theme('borderColor'),
     textStrokeWidth: theme => theme('borderWidth'),
