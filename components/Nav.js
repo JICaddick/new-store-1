@@ -19,12 +19,12 @@ function Nav() {
     <div className="flex items-center justify-between max-w-6xl px-4 pt-4 pb-2 mx-auto lg:max-w-screen-xl">
       <Link href="/" passHref>
         <a className="cursor-pointer">
-          <span className="pt-1 text-xl font-bold text-green-700">
+          <span className="pt-1 text-xl text-green-700">
               Look closer, Lenny 
             </span>
           </a>
         </Link>
-        <a className="text-xl font-bold text-green-700 cursor-pointer"
+        <a className="text-xl text-green-700 cursor-pointer"
           onClick={() => setCartOpen(!cartOpen)}
         >
           Cart ({cartQuantity})

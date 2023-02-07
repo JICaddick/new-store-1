@@ -1,7 +1,7 @@
 const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
   return (
     <fieldset className="mt-3">
-      <legend className="text-xl font-semibold text-yellow-400 drop-shadow-2xl ">{name}</legend>
+      <legend className="text-xl text-yellow-400 drop-shadow-2xl ">{name}</legend>
       <div className="inline-flex flex-wrap items-center hover:opacity-60">
         {values.map((value) => {
           const id = `option-${name}-${value}`;

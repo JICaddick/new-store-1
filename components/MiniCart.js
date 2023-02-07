@@ -57,7 +57,7 @@ export default function MiniCart({ cart }) {
                   <div className="flex flex-col h-full overflow-y-scroll shadow-xl bg-amber-50">
                     <div className="flex-1 px-4 py-6 overflow-y-auto sm:px-6">
                       <div className="flex items-start justify-between">
-                        <Dialog.Title className="text-lg font-medium text-amber-700">
+                        <Dialog.Title className="text-lg text-amber-700">
                           Shopping cart
                         </Dialog.Title>
                         <div className="flex items-center ml-3 h-7">
@@ -93,7 +93,7 @@ export default function MiniCart({ cart }) {
 
                                   <div className="flex flex-col flex-1 ml-4">
                                     <div>
-                                      <div className="flex justify-between text-base font-medium text-amber-500">
+                                      <div className="flex justify-between text-base text-amber-500">
                                         <h3>
                                           <Link
                                             href={`/products/${product.handle}`}
@@ -118,11 +118,11 @@ export default function MiniCart({ cart }) {
                                       </p>
                                     </div>
                                     <div className="flex items-end justify-between flex-1 text-sm">
-                                      <button onClick={() => { removeFromItemInCart(product.id) }} type="button" className="font-medium text-grey-500 hover:text-orange-400"> - </button>
+                                      <button onClick={() => { removeFromItemInCart(product.id) }} type="button" className="text-grey-500 hover:text-orange-400"> - </button>
                                       <p className="text-green-700">
                                         Qty {product.variantQuantity}
                                       </p>
-                                      <button onClick={() => { addToItemInCart(product.id) }} type="button" className="font-medium text-grey-500 hover:text-orange-400"> + </button>
+                                      <button onClick={() => { addToItemInCart(product.id) }} type="button" className="text-grey-500 hover:text-orange-400"> + </button>
 
                                       <div className="flex">
                                         <button
@@ -130,7 +130,7 @@ export default function MiniCart({ cart }) {
                                             removeCartItem(product.id);
                                           }}
                                           type="button"
-                                          className="font-medium text-green-700 hover:text-orange-400"
+                                          className="text-green-700 hover:text-orange-400"
                                         >
                                           Remove
                                         </button>
@@ -150,7 +150,7 @@ export default function MiniCart({ cart }) {
                     </div>
                     {cart.length > 0 ? (
                       <div className="px-4 py-6 border-t border-gray-200 sm:px-6">
-                        <div className="flex justify-between text-base font-medium text-amber-500">
+                        <div className="flex justify-between text-base text-amber-500">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
                         </div>
@@ -160,7 +160,7 @@ export default function MiniCart({ cart }) {
                         <div className="mt-6">
                           <a
                             href={checkoutUrl}
-                            className="flex items-center justify-center px-6 py-3 text-base font-medium bg-yellow-400 border border-transparent rounded-md shadow-sm text-amber-700 hover:opacity-60 hover:bg-yellow-500 hover:text-green-700"
+                            className="flex items-center justify-center px-6 py-3 text-base bg-yellow-400 border border-transparent rounded-md shadow-sm text-amber-700 hover:opacity-60 hover:bg-yellow-500 hover:text-green-700"
                           >
                             Checkout
                           </a>
@@ -170,7 +170,7 @@ export default function MiniCart({ cart }) {
                             or
                             <button
                               type="button"
-                              className="font-medium hover:text-yellow-500"
+                              className="hover:text-yellow-500"
                               onClick={() => setCartOpen(false)}
                             >
                               &nbsp; Continue Shopping
