@@ -20,7 +20,7 @@ function Nav() {
       <Link href="/" passHref>
         <a className="cursor-pointer">
           <span className="pt-1 text-xl text-green-700">
-              Look closer, Lenny 
+              Back to the Hive
             </span>
           </a>
         </Link>

@@ -33,7 +33,7 @@ const Hero = () => {
             Honey Dripper Jewelry
           </p>
         </h1>
-        <h2 className="max-w-md mx-auto my-2 text-amber-500 pb-28 drop-shadow-2xl shadow-green-700 sm:text-5xl md:mt-5 md:text-5xl text-stroke-2 text-stroke-black">
+        <h2 className="max-w-md mx-auto my-2 text-amber-500 pb-28 drop-shadow-2xl shadow-green-700 sm:text-5xl md:mt-5 md:text-5xl text-stroke-2 text-stroke-black" style= {{textShadow:"20px 20px 25px black"}}>
         Pour some sugar on yourself
         </h2>
         </div>

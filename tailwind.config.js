@@ -7,8 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Raleway': ['Raleway', 'sans-serif'], // <--   this is the primary font.  
-        'Lora': ['Lora', 'serif'], // <--  this is the secondary font.  
+        'raleway': ['Raleway', 'sans-serif'], // <--   this is the primary font.  
       },
       colors: {
           'amber': '#fffbeb', // <-- this is the primary (background color)
@@ -18,12 +17,17 @@ module.exports = {
           'darkorange' : '#ca8a04', // <-- this is the quinary (text color)
         }, 
       
-      borderColor: theme => ({ // defaults to these values - Needed for textStrokeColor. No need to specify all of them.
-        ...theme('colors'),
-         DEFAULT: theme('colors.gray.300', 'currentColor'),
-       }),
+      // borderColor: theme => ({ // defaults to these values - Needed for textStrokeColor. No need to specify all of them.
+      //   ...theme('colors'),
+      //    DEFAULT: theme('colors.gray.300', 'currentColor'),
+      //  }),
     },
   },
+
+  fontFamily: {
+    'lora': ['Lora', 'serif'] // <--  this is the secondary font.
+  },
+
 
   theme: {
     textFillColor: theme => theme('borderColor'),
