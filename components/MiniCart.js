@@ -54,10 +54,10 @@ export default function MiniCart({ cart }) {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="w-screen max-w-md pointer-events-auto">
-                  <div className="flex flex-col h-full overflow-y-scroll shadow-xl bg-amber-50">
+                  <div className="flex flex-col h-full overflow-y-scroll bg-white shadow-xl">
                     <div className="flex-1 px-4 py-6 overflow-y-auto sm:px-6">
                       <div className="flex items-start justify-between">
-                        <Dialog.Title className="text-lg text-amber-700">
+                        <Dialog.Title className="text-2xl font-medium text-green-700 font-lora">
                           Shopping cart
                         </Dialog.Title>
                         <div className="flex items-center ml-3 h-7">
@@ -68,7 +68,7 @@ export default function MiniCart({ cart }) {
                             onClick={() => setCartOpen(false)}
                           >
                             <span className="sr-only">Close panel</span>
-                            <XMarkIcon className="w-6 h-6" aria-hidden="true" />
+                            <XMarkIcon className="w-5 h-5 text-black" aria-hidden="true" />
                           </button>
                         </div>
                       </div>
@@ -93,7 +93,7 @@ export default function MiniCart({ cart }) {
 
                                   <div className="flex flex-col flex-1 ml-4">
                                     <div>
-                                      <div className="flex justify-between text-base text-amber-500">
+                                      <div className="flex justify-between text-lg text-amber-500">
                                         <h3>
                                           <Link
                                             href={`/products/${product.handle}`}
@@ -113,7 +113,7 @@ export default function MiniCart({ cart }) {
                                           )}
                                         </p>
                                       </div>
-                                      <p className="mt-1 text-sm text-green-700">
+                                      <p className="mt-1 text-base text-green-700">
                                         {product.variantTitle}
                                       </p>
                                     </div>
@@ -141,7 +141,7 @@ export default function MiniCart({ cart }) {
                               ))}
                             </ul>
                           ) : (
-                            <div className= "text-2xl green-700 text">
+                            <div className= "text-amber-500 text-1xl">
                               <p>There's nothing In Your Cart... Let's fix that! </p>
                             </div>
                           )}
@@ -160,7 +160,7 @@ export default function MiniCart({ cart }) {
                         <div className="mt-6">
                           <a
                             href={checkoutUrl}
-                            className="flex items-center justify-center px-6 py-3 text-base bg-yellow-400 border border-transparent rounded-md shadow-sm text-amber-700 hover:opacity-60 hover:bg-yellow-500 hover:text-green-700"
+                            className="flex items-center justify-center px-6 py-3 text-base border border-transparent rounded-md shadow-sm bg-yellow-50 text-amber-500 hover:opacity-60 hover:bg-yellow-500 hover:text-green-700 shadow-green-700"
                           >
                             Checkout
                           </a>
@@ -170,7 +170,7 @@ export default function MiniCart({ cart }) {
                             or
                             <button
                               type="button"
-                              className="hover:text-yellow-500"
+                              className="hover:text-amber-500"
                               onClick={() => setCartOpen(false)}
                             >
                               &nbsp; Continue Shopping
