@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
       href={`/products/${handle}`}
         >
           <a className="group hover:opacity-60">
-            <div className="w-full overflow-hidden bg-gray-200 shadow-md shadow-yellow-500 rounded-2xl">
+            <div className="w-full overflow-hidden bg-gray-200 border shadow-xl border-amber-300 rounded-2xl">
               <div className="relative h-72">
                 <Image
                   src={originalSrc}
